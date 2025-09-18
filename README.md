@@ -22,14 +22,14 @@ randomly from the set of invertible n × n matrices (modulo 26).
 
 ## ALGORITHM:
 
-STEP-1: Read the plain text and key from the user. STEP-2: Split the plain text into groups of length three. STEP-3: Arrange the keyword in a 3*3 matrix.
+STEP-1: Read the plain text and key from the user. 
+STEP-2: Split the plain text into groups of length three. 
+STEP-3: Arrange the keyword in a 3*3 matrix.
 STEP-4: Multiply the two matrices to obtain the cipher text of length three.
 STEP-5: Combine all these groups to get the complete cipher text.
 
 ## PROGRAM 
-
-## OUTPUT
-
+```
 #include <stdio.h>
 #include <string.h>
 #include <stdlib.h>
@@ -79,7 +79,13 @@ int main() {
   hill(msg, enc, 1); printf("Encrypted: %s\n", enc);
   hill(enc, dec, 0); printf("Decrypted: %s\n", dec);
 }
+```
 
+
+
+
+
+## OUTPUT
 <img width="1324" height="813" alt="image" src="https://github.com/user-attachments/assets/bc878254-a76f-4ec2-a7c8-ad187cb24f8e" />
 
 
